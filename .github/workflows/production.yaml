@@ -27,3 +27,6 @@ jobs:
           CRON_JOB_PRIVATE_KEY: ${{secrets.CRON_JOB_PRIVATE_KEY}}
           DISCORD_BOT_PRIVATE_KEY: ${{secrets.DISCORD_BOT_PRIVATE_KEY}}
           DISCORD_BOT_API_URL: ${{secrets.DISCORD_BOT_API_URL}}
+      - uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
