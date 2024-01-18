@@ -6,6 +6,6 @@ jobs:
     coverage:
         runs-on: ubuntu-latest
         steps:
-            - uses: codecov/codecov-action@0.1.15
+            - uses: codecov/codecov-action@2.311.0
               env:
                   CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
